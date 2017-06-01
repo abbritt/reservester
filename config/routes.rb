@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/index'
+
   get 'pages/home'
   get 'pages/restaurants'
 
