@@ -1,0 +1,16 @@
+ <head><link rel="stylesheet" href="../assets/stylesheets/welcome.scss" type="text/css">
+</head>
+<center>
+<h1>Your Restaurant has been added!</h1>
+<br>
+
+<p>
+Thanks, 
+  <%= @restaurant.name %>
+<br>
+<%= link_to "Book A Table with reservester", "/pages/home" %> | 
+<%= link_to "add a restaurant", "/restaurants/new" %> |
+<%= link_to "view all restaurants", "/restaurants/" %>
+
+</p>
+</center>

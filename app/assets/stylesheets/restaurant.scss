@@ -1,3 +1,22 @@
 // Place all the styles related to the Restaurant controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'bootstrap';
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #eaeaea;
+}
+
+h1 {
+ text-transform: uppercase;
+ line_height: -20%;
+ margin-bottom:0px;
+ }
+ 
+ .form{
+ background-color: #FFFFE0;
+ }

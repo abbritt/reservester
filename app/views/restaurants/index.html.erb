@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+ <link rel="stylesheet" href="../assets/stylesheets/restaurant.scss" type="text/css">
+ </head>
+ <body>
+<center><h1>List of All Restaurants Using Reservester</h1></center>
+<br>
+
+<table>
+<th>Name</th>
+    <th>Address</th>
+    <th>Phone   </th>
+    <th>Food Genre</th>
+  </tr>
+ 
+  <% @restaurants.each do |restaurant| %>
+    <tr>
+      <td><%= restaurant.name %></td>
+      <td><%= restaurant.address %></td>
+      <td><%= restaurant.phone %></td>
+      <td><%= restaurant.food_genre %></td>
+  <% end %>
+</table>
+<center><%= link_to "Book a Table?", "../pages/home" %> | <%= link_to "Add a new page", "../restaurants/new" %></p></center>
+<body>
+</html>

@@ -4,7 +4,7 @@
 
 </head>
 <body>
-<div class="welcome-outer"><div class="welcome">
+<div class="welcome">
 <center>
 <%= image_tag("burger.png", :alt => "burgah") %>
 <%= image_tag("hotdog.png", :alt => "hotdog") %>
@@ -12,8 +12,9 @@
 <%= image_tag("taco.png", :alt => "taco") %>
 <%= image_tag("yum.png", :alt => "yum") %>
 <br>
-<%= link_to "reservester", "/pages/home" %></p>
+<%= link_to "Book A Table with reservester", "/pages/home" %> | 
+<%= link_to "add a restaurant", "/restaurants/new" %>
 </center>
-</div></div>
+</div>
 </body>
 </html> 

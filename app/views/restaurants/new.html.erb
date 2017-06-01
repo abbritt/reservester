@@ -1,7 +1,13 @@
-<h1>Add a new restaurant</h1>
+ <!DOCTYPE html>
+ 
+ <head><link rel="stylesheet" href="../assets/stylesheets/restaurant.scss" type="text/css"></head>
+ 
+ <body>
+ <div class="form">
+<center><h1>Add a new restaurant</h1>
 <br>
 
-<%= form_for :restaurant do |f| %>
+<%= form_for :restaurants, url: restaurants_path do |f| %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -14,7 +20,7 @@
   
   <p>
   <%= f.label :phone %><br>
-  <%= telephone_field(:user, :phone) %>
+<%= telephone_field(:user, :phone) %>
  </p>
  
   <p>
@@ -26,3 +32,11 @@
     <%= f.submit %>
   </p>
 <% end %>
+</div>
+</center>
+<center>
+<%= link_to "Book A Table with reservester", "/pages/home" %> | 
+<%= link_to "view all restaurants", "/restaurants/" %>
+</center>
+</body>
+</html>

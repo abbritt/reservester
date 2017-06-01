@@ -3,12 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .welcome {  
-   margin: auto;
-     width: 400px;
-     height: 100px;  
+top: 0;
+bottom: 0;
+margin: auto;
+position: absolute;
+left: 0;
+right: 0;
+width: 100vw;
+height: 100px;
+background-color: #eaeaea;
 }  
+ 
+body{
+ background-color: #FFFFE0;
+}
 
-.welcome-outer
-{
-     padding: 300px;
-     }
+a:link { 
+  color: #b8b8b8;
+  font-family: helvetica;
+  text-transform: uppercase;
+}
+a:visited { 
+  color: #D3D3D3;
+    font-family: helvetica;
+    text-transform: uppercase;
+}
+a:hover { 
+  color: #000;
+    font-family: helvetica;
+    text-transform: uppercase;
+    
+}
+a:active { 
+  color: #D3D3D3;
+    font-family: helvetica;
+    text-transform: uppercase;
+}
