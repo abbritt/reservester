@@ -6,6 +6,10 @@ class ImagesController < ApplicationController
   def index
     @images = Image.all
   end
+  
+  def image_params
+  params.require(:image).permit(:title, :content, :image)
+  end
 
   # GET /images/1
   # GET /images/1.json
