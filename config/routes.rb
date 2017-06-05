@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :b_users
   resources :images
   get 'welcome/index'
   get 'pages/home'
