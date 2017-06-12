@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reserver: MyString
+  time: 2017-06-12
+  special_requests: MyText
+  restaurants: one
+
+two:
+  reserver: MyString
+  time: 2017-06-12
+  special_requests: MyText
+  restaurants: two

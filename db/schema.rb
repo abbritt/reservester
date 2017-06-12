@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170605181521) do
+ActiveRecord::Schema.define(version: 20170612155826) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,16 @@ ActiveRecord::Schema.define(version: 20170605181521) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "reservations", force: :cascade do |t|
+    t.string "reserver"
+    t.date "time"
+    t.text "special_requests"
+    t.bigint "restaurants_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["restaurants_id"], name: "index_reservations_on_restaurants_id"
+  end
+
   create_table "restaurants", force: :cascade do |t|
     t.text "name"
     t.text "address"
@@ -49,4 +59,5 @@ ActiveRecord::Schema.define(version: 20170605181521) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "reservations", "restaurants", column: "restaurants_id"
 end

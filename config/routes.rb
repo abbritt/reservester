@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'pages/home'
   get 'pages/restaurants'
-  resources :restaurants
+  resources :restaurants do
+  	resources :reservations
+  end
   root 'welcome#index'
 
 
